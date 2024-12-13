@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 5px;
+}
+
+.optionbtn{
+border-radius: 10px;
+}
