@@ -1,5 +1,5 @@
 import { useState } from "react";
-import css from "./Feetback.module.css"
+import css from "./Feedback.module.css"
 
 const Feedback = () => {
     const [feedback, setFeedback] = useState({
@@ -16,13 +16,13 @@ const Feedback = () => {
     };
     return (
         <div className={css.container}>
-           <ul className={css.feetbacklist}>
-            <li className={css.feetbackitem}>good: {feetback.good}</li>
-            <li className={css.feetbackitem}>neutral: {feetback.neutral}</li>
-            <li className={css.feetbackitem}>bad: {feetback.bad}</li>
+           <ul className={css.feedbacklist}>
+            <li className={css.feedbackitem}>good: {feedback.good}</li>
+            <li className={css.feedbackitem}>neutral: {feedback.neutral}</li>
+            <li className={css.feedbackitem}>bad: {feedback.bad}</li>
            </ul>
         </div>
     )
 } 
  
-export default Feetback;
+export default Feedback;

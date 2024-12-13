@@ -1,16 +1,14 @@
 
 import Description from "./components/description/Description";
-import Feedback from "./components/feedback/Feetback";
+import Feedback from "./components/feedback/Feedback";
 import Options from "./components/options/Options"
 
 function App() {
-    const updateFeedback = (feedbackType) => {
-        console.log(`Feedback type: ${feedbackType}`); // Для перевірки
-    };
+    
   return (
     <div>
         <Description />
-        <Option updateFeedback={updateFeedback} />
+        <Options updateFeedback={updateFeedback} />
         <Feedback />
     </div>
 );
