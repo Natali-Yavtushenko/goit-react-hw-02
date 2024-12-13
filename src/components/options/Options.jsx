@@ -1,7 +1,7 @@
 import css from "./Options.module.css"
 
 
-function Option({ updateFeedback }) {
+function Options({ updateFeedback, resetFeedback }) {
     return (
         <div className={css.container}>
             <button onClick={() => updateFeedback("good")} className={css.optionbtn}>
@@ -13,8 +13,11 @@ function Option({ updateFeedback }) {
             <button onClick={() => updateFeedback("bad")} className={css.optionbtn}>
                 Bad
             </button>
+            <button onClick={resetFeedback} className={css.optionbtn}>
+                Reset
+            </button>
         </div>
     );
 }
 
-export default Option;
+export default Options;
